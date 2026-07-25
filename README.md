@@ -18,4 +18,4 @@ Any static host works (GitHub Pages, Netlify, Vercel). For GitHub Pages: repo **
 
 ## Customizing
 
-Contact details in the **Contact** section (`index.html`) are placeholders — replace the email, phone number, and office location with the real ones.
+The phone number and office location in the **Contact** section (`index.html`) are placeholders — replace them with the real ones.
