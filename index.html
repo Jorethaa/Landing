@@ -44,10 +44,12 @@
   .brand { display: flex; align-items: center; gap: 12px; text-decoration: none; }
   .brand-mark {
     width: 42px; height: 42px; border-radius: 8px;
-    background: linear-gradient(135deg, var(--red), var(--red-dark));
+    background: var(--dark);
+    border-bottom: 3px solid var(--red);
     display: grid; place-items: center;
-    font-weight: 800; font-size: 18px; color: #fff; letter-spacing: -0.5px;
+    font-weight: 800; font-size: 14.5px; color: #fff; letter-spacing: 0.5px;
   }
+  .brand-mark em { font-style: normal; color: var(--red); }
   .brand-name { color: var(--dark); font-weight: 700; font-size: 17px; letter-spacing: 0.4px; }
   .brand-name span { display: block; font-size: 10.5px; font-weight: 600; color: var(--red-dark); letter-spacing: 2.5px; text-transform: uppercase; }
   nav.links { display: flex; gap: 28px; }
@@ -288,7 +290,7 @@
 <header>
   <div class="wrap nav">
     <a class="brand" href="#top">
-      <div class="brand-mark">SH</div>
+      <div class="brand-mark">S<em>H</em>L</div>
       <div class="brand-name">Sealand Haulage Limited<span>Oil &amp; Gas Logistics</span></div>
     </a>
     <nav class="links" id="navLinks">
