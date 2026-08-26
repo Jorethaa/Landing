@@ -17,7 +17,7 @@ export default function Page() {
   return (
     <main className="min-h-screen overflow-hidden bg-background text-foreground">
       <section className="relative min-h-[680px] bg-primary text-primary-foreground">
-        <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(7,23,39,.96)_0%,rgba(7,23,39,.79)_42%,rgba(7,23,39,.2)_100%)]" />
+        <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(14,14,14,.96)_0%,rgba(14,14,14,.79)_42%,rgba(14,14,14,.2)_100%)]" />
         <img src={`${BASE}/images/haulage-hero.png`} alt="" className="absolute inset-0 h-full w-full object-cover object-center opacity-80 mix-blend-screen" />
         <div className="relative mx-auto flex min-h-[680px] max-w-7xl flex-col px-6 lg:px-10">
           <header className="flex items-center justify-between border-b border-primary-foreground/20 py-6">
