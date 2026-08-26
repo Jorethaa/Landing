@@ -1,0 +1,47 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+@import 'shadcn/tailwind.css';
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --font-sans: 'Arial', 'Helvetica Neue', sans-serif;
+  --font-mono: 'Courier New', monospace;
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-border: var(--border);
+  --color-ring: var(--ring);
+  --radius-sm: .15rem; --radius-md: .2rem; --radius-lg: .25rem; --radius-xl: .35rem;
+}
+
+:root {
+  color-scheme: light;
+  --background: oklch(0.98 0.008 90);
+  --foreground: oklch(0.2 0.025 250);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.2 0.025 250);
+  --primary: oklch(0.205 0.045 250);
+  --primary-foreground: oklch(0.98 0.008 90);
+  --secondary: oklch(0.93 0.016 88);
+  --secondary-foreground: oklch(0.2 0.025 250);
+  --muted: oklch(0.93 0.016 88);
+  --muted-foreground: oklch(0.48 0.03 250);
+  --accent: oklch(0.72 0.16 55);
+  --accent-foreground: oklch(0.18 0.04 45);
+  --border: oklch(0.86 0.02 85);
+  --ring: oklch(0.72 0.16 55);
+}
+
+* { border-color: var(--border); }
+html { background: var(--background); scroll-behavior: smooth; }
+body { @apply bg-background text-foreground; font-family: Arial, 'Helvetica Neue', sans-serif; }
