@@ -63,13 +63,16 @@ export default function Page() {
             { src: '/images/lowbed.jpg', title: 'Lowbed trucks', text: 'Heavy plant, rig components and out-of-gauge loads.' },
             { src: '/images/flatbed.jpg', title: 'Flatbed trucks', text: 'Pipes, casing and general oilfield cargo.' },
             { src: '/images/crane.png', title: 'Mobile cranes', text: 'Loading, offloading and lift support on site.' },
+            { src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Liebherr_crane_truck.jpg/1280px-Liebherr_crane_truck.jpg', title: 'Motor cranes', text: 'Truck-mounted cranes that travel to wherever the lift is.' },
+            { src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/2009-07-05_Chatham_Steel_Freightliner.jpg/1280px-2009-07-05_Chatham_Steel_Freightliner.jpg', title: 'Extended flatbeds', text: 'Long-deck trailers for pipes and full-length cargo.' },
           ].map((item) => (
             <figure key={item.title} className="group">
-              <div className="overflow-hidden"><img src={`${BASE}${item.src}`} alt={item.title} loading="lazy" className="h-60 w-full object-cover transition-transform duration-1000 ease-out group-hover:scale-105" /></div>
+              <div className="overflow-hidden"><img src={item.src.startsWith('http') ? item.src : `${BASE}${item.src}`} alt={item.title} loading="lazy" className="h-60 w-full object-cover transition-transform duration-1000 ease-out group-hover:scale-105" /></div>
               <figcaption className="mt-5 border-l-2 border-accent pl-4 transition-all duration-1000 ease-out group-hover:pl-6"><p className="font-semibold">{item.title}</p><p className="mt-1 text-sm leading-6 text-muted-foreground">{item.text}</p></figcaption>
             </figure>
           ))}
         </div>
+        <p className="mt-8 text-xs text-muted-foreground/70">Extended flatbed photo <a className="underline" href="https://commons.wikimedia.org/wiki/File:2009-07-05_Chatham_Steel_Freightliner.jpg" target="_blank" rel="noopener">via Wikimedia Commons</a> (CC BY-SA 4.0). Representative imagery.</p>
       </section>
 
       <section id="contact" className="bg-accent text-accent-foreground"><div className="mx-auto flex max-w-7xl flex-col items-start justify-between gap-8 px-6 py-16 sm:flex-row sm:items-center lg:px-10"><div><p className="font-mono text-xs uppercase tracking-[.2em] opacity-70">Let&apos;s get moving</p><h2 className="mt-3 text-3xl font-semibold tracking-[-.03em] sm:text-4xl">Have a project in mind?</h2></div><div className="flex flex-col gap-3 sm:items-end"><a href="mailto:sealandhaulage@gmail.com" className="flex items-center gap-3 border border-accent-foreground/40 px-6 py-4 text-sm font-bold transition-all duration-1000 ease-out hover:bg-accent-foreground hover:text-accent">sealandhaulage@gmail.com <ArrowUpRight size={17} /></a><a href="tel:+2348033563716" className="flex items-center gap-3 border border-accent-foreground/40 px-6 py-4 text-sm font-bold transition-all duration-1000 ease-out hover:bg-accent-foreground hover:text-accent">+234 803 356 3716 <ArrowUpRight size={17} /></a></div></div></section>
