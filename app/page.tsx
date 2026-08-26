@@ -72,7 +72,6 @@ export default function Page() {
             </figure>
           ))}
         </div>
-        <p className="mt-8 text-xs text-muted-foreground/70">Extended flatbed photo <a className="underline" href="https://commons.wikimedia.org/wiki/File:2009-07-05_Chatham_Steel_Freightliner.jpg" target="_blank" rel="noopener">via Wikimedia Commons</a> (CC BY-SA 4.0). Representative imagery.</p>
       </section>
 
       <section id="contact" className="bg-accent text-accent-foreground"><div className="mx-auto flex max-w-7xl flex-col items-start justify-between gap-8 px-6 py-16 sm:flex-row sm:items-center lg:px-10"><div><p className="font-mono text-xs uppercase tracking-[.2em] opacity-70">Let&apos;s get moving</p><h2 className="mt-3 text-3xl font-semibold tracking-[-.03em] sm:text-4xl">Have a project in mind?</h2></div><div className="flex flex-col gap-3 sm:items-end"><a href="mailto:sealandhaulage@gmail.com" className="flex items-center gap-3 border border-accent-foreground/40 px-6 py-4 text-sm font-bold transition-all duration-1000 ease-out hover:bg-accent-foreground hover:text-accent">sealandhaulage@gmail.com <ArrowUpRight size={17} /></a><a href="tel:+2348033563716" className="flex items-center gap-3 border border-accent-foreground/40 px-6 py-4 text-sm font-bold transition-all duration-1000 ease-out hover:bg-accent-foreground hover:text-accent">+234 803 356 3716 <ArrowUpRight size={17} /></a></div></div></section>
