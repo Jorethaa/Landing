@@ -61,7 +61,6 @@ export default function Page() {
         <div className="grid gap-8 md:grid-cols-3">
           {[
             { src: '/images/lowbed.jpg', title: 'Lowbed trucks', text: 'Heavy plant, rig components and out-of-gauge loads.' },
-            { src: '/images/flatbed.jpg', title: 'Flatbed trucks', text: 'Pipes, casing and general oilfield cargo.' },
             { src: '/images/crane.png', title: 'Mobile cranes', text: 'Loading, offloading and lift support on site.' },
             { src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Liebherr_crane_truck.jpg/1280px-Liebherr_crane_truck.jpg', title: 'Motor cranes', text: 'Truck-mounted cranes that travel to wherever the lift is.' },
             { src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/2009-07-05_Chatham_Steel_Freightliner.jpg/1280px-2009-07-05_Chatham_Steel_Freightliner.jpg', title: 'Extended flatbeds', text: 'Long-deck trailers for pipes and full-length cargo.' },
