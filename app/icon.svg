@@ -1,10 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <clipPath id="r"><rect width="64" height="64" rx="12"/></clipPath>
-  <g clip-path="url(#r)">
-    <rect width="64" height="64" fill="#121212"/>
-    <rect x="0" y="58" width="64" height="6" fill="#d92027"/>
-  </g>
-  <text x="32" y="42" text-anchor="middle"
-        font-family="Segoe UI, Arial, sans-serif" font-weight="800" font-size="23"
-        letter-spacing="0.5" fill="#ffffff">S<tspan fill="#d92027">H</tspan>L</text>
+  <rect width="64" height="64" rx="8" fill="#0e0e0e"/>
+  <rect x="6" y="6" width="52" height="52" rx="3" fill="#d92027"/>
+  <text x="30" y="37" text-anchor="middle"
+        font-family="Segoe UI, Arial, sans-serif" font-weight="900" font-style="italic"
+        font-size="23" fill="#ffffff">ShL</text>
+  <text x="32" y="50" text-anchor="middle"
+        font-family="Segoe UI, Arial, sans-serif" font-weight="600"
+        font-size="7.5" fill="#ffffff">RC 873148</text>
 </svg>

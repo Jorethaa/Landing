@@ -22,8 +22,11 @@ export default function Page() {
         <div className="relative mx-auto flex min-h-[680px] max-w-7xl flex-col px-6 lg:px-10">
           <header className="flex items-center justify-between border-b border-primary-foreground/20 py-6">
             <a href="#top" className="flex items-center gap-3" aria-label="Sealand Haulage home">
-              <span className="flex h-10 w-10 items-center justify-center border-b-2 border-accent bg-white font-mono text-base font-bold text-neutral-900">S<span className="text-accent">H</span>L</span>
-              <span className="text-sm font-semibold uppercase tracking-[.18em]">Sealand<br /><span className="font-normal text-primary-foreground/60">Haulage Limited</span></span>
+              <span className="flex flex-col items-center justify-center border-[3px] border-black bg-[#d92027] px-2 py-1 leading-none ring-1 ring-white/20">
+                <span className="pr-0.5 text-lg font-black italic tracking-tight text-white">ShL</span>
+                <span className="text-[6px] font-semibold tracking-[.08em] text-white">RC 873148</span>
+              </span>
+              <span className="text-sm font-semibold uppercase tracking-[.18em]"><span className="text-[#d92027]">S</span>ealand<br /><span className="font-normal text-primary-foreground/60"><span className="font-semibold text-[#d92027]">H</span>aulage <span className="font-semibold text-[#d92027]">L</span>imited</span></span>
             </a>
             <nav className="hidden items-center gap-9 text-sm text-primary-foreground/70 md:flex" aria-label="Main navigation">
               <a className="transition-colors hover:text-primary-foreground" href="#services">Services</a>
