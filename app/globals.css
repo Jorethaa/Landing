@@ -45,3 +45,16 @@
 * { border-color: var(--border); }
 html { background: var(--background); scroll-behavior: smooth; }
 body { @apply bg-background text-foreground; font-family: Arial, 'Helvetica Neue', sans-serif; }
+
+a:focus-visible, button:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 5px;
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+  a:hover, article:hover, figure:hover img { transform: none !important; }
+}
